@@ -17,7 +17,7 @@ router.post('/signup' , async(req,res)=>{
     const {success} = signupBody.safeParse(req.body)
     if(!success){
         return res.status(411).json({
-            error:'email already in use/invalid inputs'
+            error:'email already in use/invalid input'
         })
     }
 
